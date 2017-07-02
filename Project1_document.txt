@@ -1,0 +1,60 @@
+PROJECT - USA Crime Analysis
+
+Project Objectives 
+
+1.Write a MapReduce/Pig program to calculate the number of cases investigated under each
+FBI code
+2. Write a MapReduce/Pig program to calculate the number of cases investigated under FBI
+code 32.
+3. Write a MapReduce/Pig program to calculate the number of arrests in theft district wise.
+4. Write a MapReduce/Pig program to calculate the number of arrests done between October
+2014 and October 2015.
+
+Solution 
+
+Given data file is loaded is loaded in to hdfs using the put command 
+
+hdfs dfs -put Crimes_-Project1.csv  /crime_data
+
+Mapreduce code is used to accomplish the objectives given 
+Maven is used to build jar 
+Eclipse IDE is used as Editor
+to run the code jar is exported from the eclipse and it executed in the command line by passing  the inoput file path the output path :
+            For Example : yarn jar Arrests_dist_Count.jar /crime_csv /outputArrestdis
+Output is view in the hdfs shell using the cat command :
+            Foe example :   hdfs dfs -cat /outputArrest/part-r-00000
+Else from the HDFS web UI
+               http://hadoop.com:50070/explorer.html#/output1
+
+
+Solution for Objective 1 
+Mapreduce code is attached below
+
+ 
+screenshot of the output is attached below
+ 
+
+Solution for Objective 2
+Mapreduce code is attached below
+ 
+screenshot of the output is attached below
+ 
+
+Solution for Objective 3
+Mapreduce code is attached below
+ 
+screenshot of the output is attached below
+ 
+
+Solution for Objective 4
+Mapreduce code is attached below
+ 
+
+screenshot of the output is attached below
+
+ 
+
+
+
+
+
